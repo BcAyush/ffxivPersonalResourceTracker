@@ -1,7 +1,14 @@
 import time
 import pandas as pd
+from rich.console import Console
+from rich.live import Live
+from rich.table import Table
+from rich.layout import Layout
+from rich.panel import Panel
+from rich.align import Align
 
 
+#=========================================Classes and Functions============================================
 #item object
 class item:
     def __init__(self, name, level, timeStart, timeEnd):
@@ -19,33 +26,68 @@ def calculateTime():
     minutes = gameTime // 60 % 60
     seconds = gameTime % 60
 
-    print(f"{round(hours)}:{round(minutes)}:{seconds:.2f}")
+    return [round(hours), round(minutes), round(seconds)]
 
-    return hours
+def generate_table():
+    table = Table(title="Mining Collectables", title_style= "cyan", header_style= "cyan", expand=True, style="cyan")
+    table.add_column("Name", justify='center')
+    table.add_column("Level", justify='center')
+    table.add_column("Time", justify='center')
+    return table
+
+def generate_panel(time):
+    return Panel(Align.center(f"{time[0]}:{time[1]}:{time[2]}", vertical='middle'), title="Eorzean Time", style="red")
 
 
-itemTable = []
+#===========================================Main Code==================================================
+
+#creating layout
+layout = Layout()
+layout.split_column( 
+    Layout(name="Eorzean Time"),
+    Layout(name="Collectables")
+)
+layout["Eorzean Time"].size = 5
+
+
 
 #retrieve information from csv
 resourceTable = pd.read_csv(r"C:\repos\ffxivPersonalResourceTracker\resourceTable.csv")
 resourceList = resourceTable.values.tolist()
 
 #create item table
+itemTable = []
 for i in resourceList:
     itemTable.append(item(i[0], i[1], i[2], i[3]))
-    
-
-#main code
-while(True):
-    output = calculateTime()
-    print()
-    print("Gatherable Unspoiled Nodes:")
-    for i in itemTable:
-        if i.timeStart <= output and (i.timeEnd > output or (i.timeEnd == 23 and output == 23)):
-            print(f"Name: {i.name}, Level: {i.level}, Time: {i.timeStart}:00 - {i.timeEnd}:00")
 
 
-    time.sleep(5)
-    print("\033[2J\033[H", end="")
+#generate initial renderables
+console = Console()
+table = generate_table()
+panel = generate_panel(calculateTime())
+
+#live updating
+with Live(layout, refresh_per_second=1, screen=True) as live:
+    while True:
+
+        #constructing new renderables
+        output = calculateTime()
+        panel = generate_panel(output)
+        table = generate_table()
+
+        #calculate limited collectables that are available
+        for i in itemTable:
+            if i.timeStart <= output[0] and (i.timeEnd > output[0] or (i.timeEnd == 23 and output[0] == 23)):
+                table.add_row(
+                    Align.center(str(i.name), vertical='middle'), 
+                    Align.center(str(i.level), vertical='middle'), 
+                    Align.center(f"{i.timeStart}:00 - {i.timeEnd}:00", vertical='middle'),
+                    style = "cyan"
+                )
+
+        #update panel and tables
+        layout["Eorzean Time"].update(panel)
+        layout["Collectables"].update(table)
+
 
     
