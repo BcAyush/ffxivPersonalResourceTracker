@@ -1,37 +1,136 @@
-﻿Name,Level,timeStart,timeEnd
-Rarefied Pyrite,51,4,6
-Rarefied Pyrite,51,16,18
-Rarefied Chalcocite,53,4,6
-Rarefied Chalcocite,53,16,18
-Rarefied Limonite,55,4,6
-Rarefied Limonite,55,16,18
-Rarefied Abalathian Spring Water,57,2,4
-Rarefied Abalathian Spring Water,57,14,16
-Rarefied Aurum Regis Sand,59,2,4
-Rarefied Aurum Regis Sand,59,14,16
-Rarefied Raw Triphane,61,8,10
-Rarefied Raw Triphane,61,20,22
-Rarefied Raw Star Spinel,63,10,12
-Rarefied Raw Star Spinel,63,22,23
-Rarefied Raw Kyanite,65,8,10
-Rarefied Raw Kyanite,65,20,22
-Rarefied Raw Azurite,67,6,8
-Rarefied Raw Azurite,67,18,20
-Rarefied Silvergrace Ore,69,6,8
-Rarefied Silvergrace Ore,69,18,20
-Rarefied Titancopper Ore,71,4,6
-Rarefied Titancopper Ore,71,16,18
-Rarefied Raw Lazurite,73,6,8
-Rarefied Raw Lazurite,73,18,20
-Rarefied Raw Petalite,75,4,6
-Rarefied Raw Petalite,75,16,18
-Rarefied Sea Salt,77,8,10
-Rarefied Sea Salt,77,20,22
-Rarefied Reef Rock,79,2,4
-Rarefied Reef Rock,79,14,16
-Rarefied Raw Onyx,80,8,10
-Rarefied Raw Onyx,80,20,22
-Rarefied Tungsten Ore,80,2,4
-Rarefied Tungsten Ore,80,14,16
-Rarefied Gyr Abanian Alumen,80,10,12
-Rarefied Gyr Abanian Alumen,80,22,23
+timeStart,timeEnd,Name,Location,Coordinates,Level
+1,4,Darksteel Ore,Coerthas Central Highlands,"(x27,y19)",50
+1,4,Pumice,Eastern La Noscea,"(x17,y26)",50
+2,5,Antumbral Rock,Eastern Thanalan,"(x26,y19)",50
+2,5,Ferberite,Northern Thanalan,"(x16,y19)",50
+3,6,Raw Topaz,Northern Thanalan,"(x16,y19)",50
+3,6,Raw Iolite,Northern Thanalan,"(x16,y19)",50
+4,7,Native Gold,Central Thanalan,"(x24,y16)",50
+4,7,Raw Diamond,Central Thanalan,"(x24,y16)",50
+4,7,Raw Emerald,Central Thanalan,"(x24,y16)",50
+4,7,Platinum Ore,Southern Thanalan,"(x19,y8)",50
+5,8,Water Cluster,Western Thanalan,"(x18,y27)",50
+5,8,Gold Sand,Eastern Thanalan,"(x25,y22)",50
+6,9,Umbral Rock,South Shroud,"(x16,y31)",50
+9,12,Gold Ore,Eastern Thanalan,"(x28,y22)",50
+9,12,Coblyn Larva,Eastern Thanalan,"(x28,y22)",50
+13,16,Lightning Cluster,Mor Dhona,"(x28,y12)",50
+13,16,Fire Cluster,Mor Dhona,"(x28,y12)",50
+13,16,Wind Cluster,Mor Dhona,"(x28,y12)",50
+13,16,Water Cluster,Mor Dhona,"(x28,y12)",50
+13,16,Ice Cluster,Mor Dhona,"(x28,y12)",50
+13,16,Earth Cluster,Mor Dhona,"(x28,y12)",50
+17,20,Volcanic Rock Salt,Eastern La Noscea,"(x21,y32)",50
+17,20,Lightning Cluster,Mor Dhona,"(x27,y10)",50
+17,20,Fire Cluster,Mor Dhona,"(x27,y10)",50
+17,20,Wind Cluster,Mor Dhona,"(x27,y10)",50
+17,20,Water Cluster,Mor Dhona,"(x27,y10)",50
+17,20,Ice Cluster,Mor Dhona,"(x27,y10)",50
+17,20,Earth Cluster,Mor Dhona,"(x27,y10)",50
+17,20,Virgin Basilisk Egg,Northern Thanalan,"(x24,y26)",50
+18,21,Raw Ruby,Lower La Noscea,"(x23,y21)",50
+18,21,Raw Sapphire,Lower La Noscea,"(x23,y21)",50
+19,22,Fire Cluster,Middle La Noscea,"(x25,y27)",50
+21,23,Astral Rock,Coerthas Central Highlands,"(x23,y23)",50
+21,23,Lightning Cluster,Mor Dhona,"(x27,y10)",50
+21,23,Fire Cluster,Mor Dhona,"(x27,y10)",50
+21,23,Wind Cluster,Mor Dhona,"(x27,y10)",50
+21,23,Water Cluster,Mor Dhona,"(x27,y10)",50
+21,23,Ice Cluster,Mor Dhona,"(x27,y10)",50
+21,23,Earth Cluster,Mor Dhona,"(x27,y10)",50
+0,2,Adamantite Ore,Azys Lla,"(x24,y6)",60
+2,4,Rarefied Abalathian Spring Water ,The Sea of Clouds,"(x21,y12)",57
+2,4,Rarefied Aurum Regis Sand ,The Sea of Clouds,"(x21,y12)",59
+4,6,Rarefied Chalcocite ,The Dravanian Forelands,"(x31,y32)",53
+4,6,Rarefied Pyrite ,The Dravanian Forelands,"(x31,y32)",51
+4,6,Rarefied Limonite ,The Dravanian Forelands,"(x31,y32)",55
+10,12,Abalathian Rock Salt,The Sea of Clouds,"(x8,y8)",56
+10,12,Red Quartz,The Sea of Clouds,"(x8,y8)",58
+12,14,Adamantite Ore,Azys Lla,"(x24,y6)",60
+14,16,Rarefied Abalathian Spring Water ,The Sea of Clouds,"(x21,y12)",57
+14,16,Rarefied Aurum Regis Sand ,The Sea of Clouds,"(x21,y12)",59
+16,18,Rarefied Chalcocite ,The Dravanian Forelands,"(x31,y32)",53
+16,18,Rarefied Pyrite ,The Dravanian Forelands,"(x31,y32)",51
+16,18,Rarefied Limonite ,The Dravanian Forelands,"(x31,y32)",55
+22,23,Abalathian Rock Salt,The Sea of Clouds,"(x8,y8)",56
+22,23,Red Quartz,The Sea of Clouds,"(x8,y8)",58
+12,14,Ala Mhigan Salt Crystal,The Lochs,"(x21,y29)",69
+12,14,Raw Star Spinel,The Ruby Sea,"(x15,y5)",63
+2,4,Raw Triphane,The Fringes,"(x24,y8)",60
+4,6,Raw Azurite,Azim Steppe,"(x5,y29)",66
+6,8,Raw Imperial Jade,Yanxia,"(x29,y9)",68
+6,8,Rarefied Raw Azurite ,Azim Steppe,"(x36,y26)",67
+6,8,Rarefied Silvergrace Ore ,Azim Steppe,"(x36,y26)",69
+8,10,Rarefied Raw Triphane ,The Fringes,"(x30,y13)",61
+8,10,Rarefied Raw Kyanite ,The Fringes,"(x30,y13)",65
+8,10,Pummelite,The Peaks,"(x26,y12)",70
+8,10,Raw Rhodonite,The Peaks,"(x26,y12)",70
+10,12,Rarefied Raw Star Spinel ,The Ruby Sea,"(x21,y34)",63
+10,12,Rarefied Gyr Abanian Alumen ,The Fringes,"(x32,y31)",80
+0,2,Ala Mhigan Salt Crystal,The Lochs,"(x21,y29)",69
+0,2,Raw Star Spinel,The Ruby Sea,"(x15,y5)",63
+14,16,Raw Triphane,The Fringes,"(x24,y8)",60
+16,18,Raw Azurite,Azim Steppe,"(x5,y29)",66
+18,20,Raw Imperial Jade,Yanxia,"(x29,y9)",68
+18,20,Rarefied Raw Azurite ,Azim Steppe,"(x36,y26)",67
+18,20,Rarefied Silvergrace Ore ,Azim Steppe,"(x36,y26)",69
+20,22,Rarefied Raw Triphane ,The Fringes,"(x30,y13)",61
+20,22,Rarefied Raw Kyanite ,The Fringes,"(x30,y13)",65
+20,22,Pummelite,The Peaks,"(x26,y12)",70
+20,22,Raw Rhodonite,The Peaks,"(x26,y12)",70
+22,23,Rarefied Raw Star Spinel ,The Ruby Sea,"(x21,y34)",63
+22,23,Rarefied Gyr Abanian Alumen ,The Fringes,"(x32,y31)",80
+0,2,Raw Triplite,Amh Araeng,"(x20,y29)",76
+0,2,Raw Onyx,The Tempest,"(x16,y21)",80
+2,4,Rarefied Reef Rock ,The Tempest,"(x33,y21)",79
+2,4,Rarefied Tungsten Ore ,The Tempest,"(x33,y21)",80
+2,4,Raw Hematite,Kholusia,"(x33,y23)",70
+4,6,Raw Lazurite,The Rak'tika Greatwood,"(x19,y21)",74
+4,6,Rarefied Raw Petalite ,Lakeland,"(x36,y24)",75
+4,6,Rarefied Titancopper Ore ,Lakeland,"(x36,y24)",71
+6,8,Rarefied Raw Lazurite ,The Rak'tika Greatwood,"(x16,y18)",73
+6,8,Raw Diaspore,Il Mheg,"(x26,y13)",72
+6,8,Raw Petalite,Lakeland,"(x29,y33)",78
+8,10,Rarefied Raw Onyx ,The Tempest,"(x25,y4)",80
+8,10,Rarefied Sea Salt ,The Tempest,"(x25,y4)",77
+12,14,Raw Triplite,Amh Araeng,"(x20,y29)",76
+12,14,Raw Onyx,The Tempest,"(x16,y21)",80
+14,16,Rarefied Reef Rock ,The Tempest,"(x33,y21)",79
+14,16,Rarefied Tungsten Ore ,The Tempest,"(x33,y21)",80
+14,16,Raw Hematite,Kholusia,"(x33,y23)",70
+16,18,Raw Lazurite,The Rak'tika Greatwood,"(x19,y21)",74
+16,18,Rarefied Raw Petalite ,Lakeland,"(x36,y24)",75
+16,18,Rarefied Titancopper Ore ,Lakeland,"(x36,y24)",71
+18,20,Rarefied Raw Lazurite ,The Rak'tika Greatwood,"(x16,y18)",73
+18,20,Raw Diaspore,Il Mheg,"(x26,y13)",72
+18,20,Raw Petalite,Lakeland,"(x29,y33)",78
+20,22,Rarefied Raw Onyx ,The Tempest,"(x25,y4)",80
+20,22,Rarefied Sea Salt ,The Tempest,"(x25,y4)",77
+0,2,Rarefied Sharlayan Rock Salt ,Labyrinthos,"(x32,y21)",85
+0,2,Rarefied Raw Ametrine ,Labyrinthos,"(x32,y21)",81
+2,4,Rarefied Eblan Alumen ,Garlemald,"(x12,y21)",90
+2,4,Rarefied Phrygian Gold Ore ,Garlemald,"(x12,y21)",87
+4,6,Rarefied Pewter Ore ,Thavnair,"(x32,y25)",90
+6,8,Rarefied Bismuth Ore ,Mare Lamentorum,"(x16,y32)",83
+10,12,Rarefied Annite ,Elpis,"(x8,y36)",90
+10,12,Rarefied Blue Zircon ,Elpis,"(x8,y36)",89
+12,14,Rarefied Sharlayan Rock Salt ,Labyrinthos,"(x32,y21)",85
+12,14,Rarefied Raw Ametrine ,Labyrinthos,"(x32,y21)",81
+14,16,Rarefied Eblan Alumen ,Garlemald,"(x12,y21)",90
+14,16,Rarefied Phrygian Gold Ore ,Garlemald,"(x12,y21)",87
+16,18,Rarefied Pewter Ore ,Thavnair,"(x32,y25)",90
+18,20,Rarefied Bismuth Ore ,Mare Lamentorum,"(x16,y32)",83
+22,23,Rarefied Annite ,Elpis,"(x8,y36)",90
+22,23,Rarefied Blue Zircon ,Elpis,"(x8,y36)",89
+0,2,Rarefied Ash Soil ,Living Memory,"(x25,y17)",100
+4,6,Rarefied Ra'Kaznar Ore ,Heritage Found,"(x34,y8)",100
+4,6,Rarefied White Gold Ore ,Heritage Found,"(x38,y8)",98
+8,10,Rarefied Magnesite Ore ,Shaaloani,"(x9,y24)",100
+8,10,Rarefied Titanium Gold Ore ,Shaaloani,"(x9,y24)",96
+10,12,Rarefied Raw Dark Amber ,Kozama'uka,"(x6,y7)",93
+12,14,Rarefied Ash Soil ,Living Memory,"(x25,y17)",100
+16,18,Rarefied Ra'Kaznar Ore ,Heritage Found,"(x34,y8)",100
+16,18,Rarefied White Gold Ore ,Heritage Found,"(x38,y8)",98
+20,22,Rarefied Magnesite Ore ,Shaaloani,"(x9,y24)",100
+20,22,Rarefied Titanium Gold Ore ,Shaaloani,"(x9,y24)",96
+22,23,Rarefied Raw Dark Amber ,Kozama'uka,"(x6,y7)",93

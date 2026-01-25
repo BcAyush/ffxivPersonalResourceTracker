@@ -11,11 +11,13 @@ from rich.align import Align
 #=========================================Classes and Functions============================================
 #item object
 class item:
-    def __init__(self, name, level, timeStart, timeEnd):
+    def __init__(self, timeStart, timeEnd, name, gameMap, coords, level):
         self.name = name
         self.level = level
         self.timeStart = timeStart
         self.timeEnd = timeEnd
+        self.gameMap = gameMap
+        self.coords = coords
 
 #calculate in-game time
 def calculateTime():
@@ -28,10 +30,13 @@ def calculateTime():
 
     return [round(hours), round(minutes), round(seconds)]
 
+#functions to generate panel and table to make updating simpler
 def generate_table():
-    table = Table(title="Mining Collectables", title_style= "cyan", header_style= "cyan", expand=True, style="cyan")
+    table = Table(title="Unspoiled Mining Nodes", title_style= "cyan", header_style= "cyan", expand=True, style="cyan")
     table.add_column("Name", justify='center')
     table.add_column("Level", justify='center')
+    table.add_column("Location", justify='center')
+    table.add_column("Coordinates", justify='center')
     table.add_column("Time", justify='center')
     return table
 
@@ -58,7 +63,7 @@ resourceList = resourceTable.values.tolist()
 #create item table
 itemTable = []
 for i in resourceList:
-    itemTable.append(item(i[0], i[1], i[2], i[3]))
+    itemTable.append(item(i[0], i[1], i[2], i[3], i[4], i[5]))
 
 
 #generate initial renderables
@@ -77,10 +82,24 @@ with Live(layout, refresh_per_second=1, screen=True) as live:
 
         #calculate limited collectables that are available
         for i in itemTable:
-            if i.timeStart <= output[0] and (i.timeEnd > output[0] or (i.timeEnd == 23 and output[0] == 23)):
+
+            #account for midnight boundary condition
+            if i.timeStart <= output[0] and i.timeEnd == 23 and i.timeEnd >= output[0]:
                 table.add_row(
                     Align.center(str(i.name), vertical='middle'), 
                     Align.center(str(i.level), vertical='middle'), 
+                    Align.center(str(i.gameMap), vertical='middle'),
+                    Align.center(str(i.coords), vertical='middle'),
+                    Align.center(f"{i.timeStart}:00 - 0:00", vertical='middle'),
+                    style = "cyan"
+                )
+            #normal condition
+            elif i.timeStart <= output[0] and i.timeEnd > output[0]:
+                table.add_row(
+                    Align.center(str(i.name), vertical='middle'), 
+                    Align.center(str(i.level), vertical='middle'), 
+                    Align.center(str(i.gameMap), vertical='middle'),
+                    Align.center(str(i.coords), vertical='middle'),
                     Align.center(f"{i.timeStart}:00 - {i.timeEnd}:00", vertical='middle'),
                     style = "cyan"
                 )
